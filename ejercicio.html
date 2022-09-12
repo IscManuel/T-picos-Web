@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+<body>
+    <!-- class = La clase es el nombre que se le da al elemento para estilizarlo -->
+    <!-- id = Identificador de cada elemento -->
+    <!-- onclick = El evento onclick para hacer el llamado de nuestras funciones -->
+
+    <div class="circulo" id="btn1" onclick="ocultar_cuadrado(); ocultar_rectangulo(); mostrar_cuadrado();"></div>
+    <div class="cuadrado"  id="btn2" onclick="ocultar_circulo();"></div>
+    <div class="rectangulo" id="btn3" onclick="mostrar_circulo(); ocultar_cuadrado();"></div>
+
+    <script>
+        //para ocultar y/o mostrar el cuadrado amarillo
+        function ocultar_cuadrado(){
+            document.getElementById('btn2').style.visibility = "hidden";
+        }
+        function mostrar_cuadrado(){
+            document.getElementById('btn2').style.visibility = "visible";
+        }
+        //para ocultar y/o mostrar el circulo rojo
+        function ocultar_circulo(){
+            document.getElementById('btn1').style.visibility = "hidden";
+        }
+        function mostrar_circulo(){
+            document.getElementById('btn1').style.visibility = "visible";
+        }
+        //para ocultar y/o mostrar el rectangulo azul
+        function ocultar_rectangulo(){
+            document.getElementById('btn3').style.visibility = "hidden";
+        }
+        function mostrar_rectangulo(){
+            document.getElementById('btn3').style.visibility = "visible";
+        }
+    </script>
+
+</body>
+</html>
